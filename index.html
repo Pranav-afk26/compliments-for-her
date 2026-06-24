@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Someone Special ✨</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#ff9a9e,#fad0c4);
+overflow:hidden;
+}
+
+.container{
+text-align:center;
+background:white;
+padding:40px;
+border-radius:25px;
+box-shadow:0 10px 30px rgba(0,0,0,0.15);
+max-width:500px;
+width:90%;
+animation:fadeIn 1s ease;
+}
+
+h1{
+color:#ff5c8a;
+margin-bottom:15px;
+}
+
+p{
+font-size:18px;
+color:#555;
+margin-bottom:20px;
+}
+
+button{
+padding:12px 25px;
+border:none;
+border-radius:50px;
+cursor:pointer;
+font-size:16px;
+margin:10px;
+transition:0.3s;
+}
+
+.yes{
+background:#ff5c8a;
+color:white;
+}
+
+.no{
+background:#ddd;
+}
+
+button:hover{
+transform:scale(1.05);
+}
+
+img{
+width:220px;
+border-radius:20px;
+margin-top:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+.heart{
+position:absolute;
+font-size:24px;
+animation:float 5s linear infinite;
+}
+
+@keyframes float{
+0%{
+transform:translateY(100vh);
+opacity:0;
+}
+100%{
+transform:translateY(-100px);
+opacity:1;
+}
+}
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(20px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+</style>
+</head>
+
+<body>
+
+<div class="container" id="content">
+<h1>Hey tannu 😊</h1>
+<p>I made something small for you...</p>
+<button class="yes" onclick="nextPage()">Continue</button>
+</div>
+
+<script>
+
+let page = 0;
+
+function nextPage(){
+
+page++;
+
+const content = document.getElementById("content");
+
+if(page===1){
+content.innerHTML=`
+<h1>Can I tell you something?</h1>
+<p>It's nothing serious 😄</p>
+<button class="yes" onclick="nextPage()">Yes</button>
+<button class="no" id="noBtn">No</button>
+`;
+
+document.getElementById("noBtn").addEventListener("mouseover",function(){
+this.style.position="absolute";
+this.style.left=Math.random()*80+"%";
+this.style.top=Math.random()*80+"%";
+});
+}
+
+else if(page===2){
+content.innerHTML=`
+<h1>Things I Like About You ✨</h1>
+<p>
+😊 Your smile <br><br>
+🌸 Your kindness <br><br>
+💫 Your positive energy <br><br>
+🎉 Your sense of humor
+</p>
+<button class="yes" onclick="nextPage()">One More Thing</button>
+`;
+}
+
+else if(page===3){
+content.innerHTML=`
+<h1>Honestly...</h1>
+<p>
+You make conversations better.<br><br>
+You make people smile.<br><br>
+And you're genuinely an amazing person ❤️
+</p>
+<button class="yes" onclick="nextPage()">Next</button>
+`;
+}
+
+else if(page===4){
+content.innerHTML=`
+<h1>Just Facts 😌</h1>
+
+<img src="herphoto.jpg.jpeg" alt="photo">
+
+<p style="margin-top:20px;">
+Keep being yourself.<br><br>
+You're awesome exactly the way you are ✨
+</p>
+
+<h2 style="color:#ff5c8a;">❤️</h2>
+`;
+}
+}
+
+for(let i=0;i<20;i++){
+
+let heart=document.createElement("div");
+
+heart.classList.add("heart");
+
+heart.innerHTML="❤️";
+
+heart.style.left=Math.random()*100+"vw";
+
+heart.style.animationDuration=
+(Math.random()*3+3)+"s";
+
+heart.style.fontSize=
+(Math.random()*20+15)+"px";
+
+document.body.appendChild(heart);
+}
+</script>
+
+</body>
+</html>
