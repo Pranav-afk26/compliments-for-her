@@ -1,9 +1,10 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>For Someone Special ✨</title>
+<title>For Someone Special ❤️</title>
 
 <style>
 *{
@@ -42,6 +43,7 @@ p{
 font-size:18px;
 color:#555;
 margin-bottom:20px;
+line-height:1.5;
 }
 
 button{
@@ -107,9 +109,16 @@ transform:translateY(0);
 <body>
 
 <div class="container" id="content">
-<h1>Hey tannu 😊</h1>
-<p>I made something small for you...</p>
-<button class="yes" onclick="nextPage()">Continue</button>
+
+<h1>Hey wifey 😊❤️</h1>
+
+<p>
+I made something small for you...<br>
+Just because you are special to me. ✨
+</p>
+
+<button class="yes" onclick="nextPage()">Continue ❤️</button>
+
 </div>
 
 <script>
@@ -123,60 +132,159 @@ page++;
 const content = document.getElementById("content");
 
 if(page===1){
+
 content.innerHTML=`
-<h1>Can I tell you something?</h1>
-<p>It's nothing serious 😄</p>
-<button class="yes" onclick="nextPage()">Yes</button>
-<button class="no" id="noBtn">No</button>
+
+<h1>Can I tell you something? 🥰</h1>
+
+<p>
+It's nothing serious 😄<br><br>
+I just wanted to remind you<br>
+how amazing you are.
+</p>
+
+<button class="yes" onclick="nextPage()">Yes ❤️</button>
+
+<button class="no" id="noBtn">No 😜</button>
+
 `;
 
 document.getElementById("noBtn").addEventListener("mouseover",function(){
+
 this.style.position="absolute";
+
 this.style.left=Math.random()*80+"%";
+
 this.style.top=Math.random()*80+"%";
+
 });
+
 }
 
 else if(page===2){
+
 content.innerHTML=`
-<h1>Things I Like About You ✨</h1>
+
+<h1>Things I Love About You ✨</h1>
+
 <p>
-😊 Your smile <br><br>
-🌸 Your kindness <br><br>
-💫 Your positive energy <br><br>
-🎉 Your sense of humor
+
+😊 Your beautiful smile<br><br>
+
+🌸 Your kindness<br><br>
+
+💫 Your positive energy<br><br>
+
+😂 Your cute sense of humor<br><br>
+
+❤️ The way you make me feel happy
+
 </p>
-<button class="yes" onclick="nextPage()">One More Thing</button>
+
+<button class="yes" onclick="nextPage()">One More Thing ❤️</button>
+
 `;
+
 }
 
 else if(page===3){
+
 content.innerHTML=`
-<h1>Honestly...</h1>
+
+<h1>Honestly... ❤️</h1>
+
 <p>
-You make conversations better.<br><br>
-You make people smile.<br><br>
-And you're genuinely an amazing person ❤️
+
+You make my ordinary days better.<br><br>
+
+You make me smile without even trying.<br><br>
+
+I love talking to you, laughing with you,<br>
+and simply having you in my life. 🥰<br><br>
+
+You are not perfect...<br>
+but honestly, I don't want you to be.<br><br>
+
+I love you just the way you are. ❤️
+
 </p>
-<button class="yes" onclick="nextPage()">Next</button>
+
+<button class="yes" onclick="nextPage()">There's More ✨</button>
+
 `;
+
 }
 
 else if(page===4){
-content.innerHTML=`
-<h1>Just Facts 😌</h1>
 
-<img src="https://pranav-afk26.github.io/compliments-for-her/herphoto.jpg.jpeg" alt="photo">
+content.innerHTML=`
+
+<h1>My Favorite Person ❤️</h1>
+
+<img src="https://pranav-afk26.github.io/compliments-for-her/herphoto.jpg.jpeg" alt="Tannu">
 
 <p style="margin-top:20px;">
-Keep being yourself.<br><br>
-You're awesome exactly the way you are ✨
+
+You are beautiful inside and out. 🌸<br><br>
+
+You are caring.<br>
+You are funny.<br>
+You are adorable.<br>
+You are strong.<br>
+You are special.<br><br>
+
+And most importantly...
+
 </p>
 
-<h2 style="color:#ff5c8a;">❤️</h2>
+<h2 style="color:#ff5c8a;">
+I LOVE YOU ❤️
+</h2>
+
+<br>
+
+<button class="yes" onclick="nextPage()">One Last Thing 💕</button>
+
 `;
+
 }
+
+else if(page===5){
+
+content.innerHTML=`
+
+<h1>Just Remember This 💕</h1>
+
+<p>
+
+No matter how busy life gets,<br>
+I hope you always remember...<br><br>
+
+There is someone who genuinely cares about you. ❤️<br><br>
+
+Someone who loves your smile.<br>
+Someone who loves your crazy side.<br>
+Someone who loves simply being around you.<br><br>
+
+And that someone is me. 🥰
+
+</p>
+
+<h2 style="color:#ff5c8a;">
+I LOVE YOU, wifey ❤️
+</h2>
+
+<p style="margin-top:15px;">
+Today, tomorrow and every day. ✨
+</p>
+
+`;
+
 }
+
+}
+
+/* Floating hearts */
 
 for(let i=0;i<20;i++){
 
@@ -195,8 +303,11 @@ heart.style.fontSize=
 (Math.random()*20+15)+"px";
 
 document.body.appendChild(heart);
+
 }
+
 </script>
 
 </body>
 </html>
+
